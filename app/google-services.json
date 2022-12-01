@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "1034666471762",
+    "project_id": "settleup-cfe94",
+    "storage_bucket": "settleup-cfe94.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1034666471762:android:5419ac3282563a8092ca8b",
+        "android_client_info": {
+          "package_name": "com.example.newapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1034666471762-qu91di44icplle690fj6taklqpbh5pvc.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.newapp",
+            "certificate_hash": "92e4af261f11851458dd703ec68c0dd3f5fe2c48"
+          }
+        },
+        {
+          "client_id": "1034666471762-1km5svm1t0oiosav9tcrd6ki7e3unfcu.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCnZuXwpAQKCxBU_PWA_ipy-FayWQJKhKs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1034666471762-1km5svm1t0oiosav9tcrd6ki7e3unfcu.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

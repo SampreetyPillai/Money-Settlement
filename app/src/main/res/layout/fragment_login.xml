@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    tools:context=".LoginFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+
+        <!--    <ImageView-->
+        <!--        android:layout_width="match_parent"-->
+        <!--        android:layout_height="match_parent"-->
+
+        <!--        android:src="@drawable/wallpaper"/>-->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:textAlignment="center"
+            android:textSize="30dp"
+            android:textStyle="bold"
+
+             android:textColor="@color/black"
+            android:fontFamily="monospace"
+            android:text="LOGIN" />
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/reg_username"
+            android:fontFamily="monospace"
+
+            android:hint="Enter gmail"
+            android:padding="15dp"
+           >
+
+        </com.google.android.material.textfield.TextInputEditText>
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/reg_password"
+            android:fontFamily="monospace"
+            android:hint="Enter password"
+            android:padding="15dp"
+            >
+
+        </com.google.android.material.textfield.TextInputEditText>
+
+        <!--        <com.google.android.material.textfield.TextInputEditText-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:id="@+id/myname"-->
+<!--            android:fontFamily="monospace"-->
+<!--            android:padding="15dp"-->
+<!--            android:hint="Enter Your Name"-->
+<!--            >-->
+
+<!--        </com.google.android.material.textfield.TextInputEditText>-->
+
+<!--        <com.google.android.material.textfield.TextInputEditText-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:id="@+id/phone"-->
+<!--            android:inputType="number"-->
+<!--            android:padding="15dp"-->
+<!--            android:fontFamily="monospace"-->
+<!--            android:hint="Enter Your Phone number"-->
+<!--            >-->
+
+<!--        </com.google.android.material.textfield.TextInputEditText>-->
+
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_register"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            android:fontFamily="monospace"
+            android:padding="15dp"
+            android:text="Register"
+            app:backgroundTint="@color/black" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_login"
+            android:layout_width="match_parent"
+
+            android:layout_height="match_parent"
+
+            android:backgroundTint="@color/black"
+            android:fontFamily="monospace"
+            android:padding="15dp"
+            android:text="Login"
+            android:textAlignment="center" />
+
+<!--        <RelativeLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content">-->
+
+<!--            <com.google.android.gms.common.SignInButton-->
+<!--                android:id="@+id/sign_in_button"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"/>-->
+
+
+
+
+<!--        </RelativeLayout>-->
+
+    </LinearLayout>
+
+
+
+
+</ScrollView>

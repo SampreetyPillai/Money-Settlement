@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomeActivity"
+    android:background="@drawable/money">
+
+    <TextView
+        android:id="@+id/yourname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Your name goes here"
+
+        android:fontFamily="monospace"
+        android:textSize="20dp"
+        android:padding="3dp"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <Button
+        android:id="@+id/transaction_calc"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:backgroundTint="@color/black"
+        android:layout_marginLeft="10dp"
+        android:fontFamily="monospace"
+        android:padding="5dp"
+        android:text="New Transaction"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/yourname" />
+
+<!--    <Button-->
+<!--        android:id="@+id/group_transaction"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="40dp"-->
+<!--        android:text="New Group Transaction"-->
+<!--        android:backgroundTint="@color/black"-->
+<!--        android:fontFamily="monospace"-->
+<!--        android:padding="5dp"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintStart_toEndOf="@id/transaction_calc"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/yourname" />-->
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:text="  "
+        app:layout_constraintTop_toBottomOf="@+id/transaction_calc"
+        tools:layout_editor_absoluteX="0dp" />
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:paddingTop="20dp"
+        android:paddingBottom="20dp"
+        android:layout_marginBottom="50dp"
+
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        tools:layout_editor_absoluteX="0dp" />
+
+<!--    <TextView-->
+<!--        android:id="@+id/textView2"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="40dp"-->
+<!--        android:layout_marginBottom="96dp"-->
+<!--        android:hint=""-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        tools:layout_editor_absoluteX="0dp" />-->
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

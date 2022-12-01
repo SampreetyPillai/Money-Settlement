@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/standard"
+    tools:context=".LoginPage">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <!--    <ImageView-->
+        <!--        android:layout_width="match_parent"-->
+        <!--        android:layout_height="match_parent"-->
+
+        <!--        android:src="@drawable/wallpaper"/>-->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:fontFamily="monospace"
+            android:text="LOGIN"
+            android:textAlignment="center"
+
+            android:textColor="@color/black"
+            android:textSize="30dp"
+            android:textStyle="bold" />
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/reg_username_l"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="monospace"
+
+            android:hint="Enter gmail"
+            android:padding="15dp">
+
+        </com.google.android.material.textfield.TextInputEditText>
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/reg_password_l"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="monospace"
+            android:hint="Enter password"
+            android:padding="15dp">
+
+        </com.google.android.material.textfield.TextInputEditText>
+
+        <!--        <com.google.android.material.textfield.TextInputEditText-->
+        <!--            android:layout_width="match_parent"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:id="@+id/myname"-->
+        <!--            android:fontFamily="monospace"-->
+        <!--            android:padding="15dp"-->
+        <!--            android:hint="Enter Your Name"-->
+        <!--            >-->
+
+        <!--        </com.google.android.material.textfield.TextInputEditText>-->
+
+        <!--        <com.google.android.material.textfield.TextInputEditText-->
+        <!--            android:layout_width="match_parent"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:id="@+id/phone"-->
+        <!--            android:inputType="number"-->
+        <!--            android:padding="15dp"-->
+        <!--            android:fontFamily="monospace"-->
+        <!--            android:hint="Enter Your Phone number"-->
+        <!--            >-->
+
+        <!--        </com.google.android.material.textfield.TextInputEditText>-->
+
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_register_l"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:fontFamily="monospace"
+            android:padding="15dp"
+            android:text="Sign UP VIA EMAIL"
+            app:backgroundTint="@color/black" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_login_l"
+            android:layout_width="match_parent"
+
+            android:layout_height="wrap_content"
+
+            android:backgroundTint="@color/black"
+            android:fontFamily="monospace"
+            android:padding="15dp"
+            android:text="Login"
+            android:textAlignment="center" />
+
+<!--        <RelativeLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content">-->
+
+<!--            <com.google.android.gms.common.SignInButton-->
+<!--                android:id="@+id/sign_in_button"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content" />-->
+
+
+<!--        </RelativeLayout>-->
+
+        <com.google.android.gms.common.SignInButton
+            android:id="@+id/sign_in_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+            />
+
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

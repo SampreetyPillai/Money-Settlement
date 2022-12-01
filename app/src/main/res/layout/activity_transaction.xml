@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TransactionActivity"
+
+    android:background="@drawable/money"
+    >
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:fontFamily="monospace"
+        android:padding="15dp"
+        android:text="Transaction Details"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="30dp"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="0dp" />
+
+
+<!--    <EditText-->
+<!--        android:id="@+id/recipient_mail"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="60dp"-->
+<!--        android:fontFamily="monospace"-->
+<!--        android:hint="Enter registered email address of recipent"-->
+<!--        android:padding="5dp"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintHorizontal_bias="0.0"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/textView2" />-->
+
+    <EditText
+        android:id="@+id/amount"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="8dp"
+        android:fontFamily="monospace"
+        android:hint="Enter amount"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:padding="5dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+    <EditText
+        android:id="@+id/status"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="4dp"
+        android:textColor="@color/white"
+        android:fontFamily="monospace"
+        android:hint="Request/Give"
+        android:textColorHint="@color/white"
+
+        android:padding="5dp"
+        app:layout_constraintTop_toBottomOf="@+id/amount"
+        tools:layout_editor_absoluteX="-16dp" />
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:hint="Occasion"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:id="@+id/occasion"
+        android:padding="5dp"
+        android:fontFamily="monospace"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/status" />
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/userrecycle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="vertical"
+        android:layout_marginBottom="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/split_button"
+        app:layout_constraintTop_toBottomOf="@+id/occasion"
+        tools:layout_editor_absoluteX="16dp" />
+
+    <Button
+        android:id="@+id/split_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/black"
+        android:fontFamily="monospace"
+        android:padding="5dp"
+        android:text="Split amount"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
